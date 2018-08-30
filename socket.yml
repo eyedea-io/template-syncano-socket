@@ -1,10 +1,11 @@
-name: csv
+name: <name>
+description: <name> description
 
 endpoints:
-  dump:
-    description: Dump data from given class (data model)
+  endpoint:
+    description: Endpoint description
     inputs:
       properties:
-        classNamename:
+        name:
           type: string
-          description: Name of the class to dump
+          description: Param description

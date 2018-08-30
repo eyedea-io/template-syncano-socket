@@ -1,24 +1,20 @@
 {
-  "name": "@eyedea-sockets/csv",
+  "name": "@eyedea-sockets/<name>",
   "version": "0.0.1",
-  "description": "Syncano Socket for CSV generation",
-  "repository": "https://github.com/eyedea-io/syncano-socket-csv.git",
+  "description": "Description",
+  "repository": "https://github.com/eyedea-io/syncano-socket-<name>.git",
   "public": true,
   "author": "Eyedea <hello@eyedea.io> https://eyedea.io",
   "license": "MIT",
   "keywords": [
-    "serverless",
     "syncano",
-    "socket",
-    "dump",
-    "csv"
+    "socket"
   ],
   "peerDependencies": {
     "@syncano/cli": "0.13.0-alpha.f6ea95d4"
   },
   "dependencies": {
-    "@eyedea/syncano": "0.2.0",
-    "json2csv": "^4.2.1"
+    "@eyedea/syncano": "0.2.0"
   },
   "scripts": {
     "build": "npm run build:src && npm run build:env",
@@ -57,6 +53,7 @@
     "testEnvironment": "node",
     "globals": {
       "ts-jest": {
+        "useBabelrc": true,
         "ignoreCoverageForAllDecorators": true
       }
     },
