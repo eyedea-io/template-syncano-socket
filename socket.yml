@@ -1,0 +1,11 @@
+name: <name>
+description: <name> description
+
+endpoints:
+  endpoint:
+    description: Endpoint description
+    inputs:
+      properties:
+        name:
+          type: string
+          description: Param description
