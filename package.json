@@ -17,7 +17,7 @@
     "@eyedea/syncano": "0.2.0"
   },
   "scripts": {
-    "build": "npm run build:src && npm run build:env",
+    "build": "npm run install && npm run build:src && npm run build:env",
     "build:src": "sh ./bin/compile",
     "build:env": "sh ./bin/compile-env",
     "test": "npm-run-all --parallel test:lint test:audit test:unit",
