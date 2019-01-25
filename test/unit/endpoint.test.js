@@ -2,7 +2,7 @@
 import {run} from '@syncano/test'
 import sinon from 'sinon'
 
-describe('generate', function () {
+describe('generate', () => {
   it('simple test', async () => {
 
     require('@syncano/core').Core.__setMocks({
