@@ -1,2 +1,2 @@
-import fb from 'fb'
-export default fb
+const fb = require('fb')
+module.exports = fb

@@ -1,16 +1,17 @@
 /* global describe it */
 import {run} from '@syncano/test'
+import sinon from 'sinon'
 
-describe('generate', function () {
+describe('generate', () => {
   it('simple test', async () => {
 
-
-  require('@syncano/core').__setMocks({
-    data: {
-      profiles: {
-        list: jest.fn().mockImplementationOnce((eventName, params) => {
-          return Promise.resolve([])
-        })
+    require('@syncano/core').Core.__setMocks({
+      data: {
+        profiles: {
+          where: () => ({
+            list: sinon.stub().onFirstCall().resolves([])
+          })
+        }
       }
     })
 
