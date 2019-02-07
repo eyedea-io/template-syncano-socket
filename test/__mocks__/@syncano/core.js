@@ -1,12 +1,10 @@
 import merge from 'lodash.merge'
 import sinon from 'sinon'
-
 import {Core} from '@syncano/core'
 const Syncano = require.requireActual('@syncano/core')
 
 let syncanoStubbed = null
 let customMock = null
-
 
 if (syncanoStubbed) {
   syncanoStubbed.restore()
